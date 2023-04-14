@@ -1,9 +1,14 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using AdventureWorks.Domain.Entities;
+using AdventureWorks.Application.Features.Humanresources.Queries.Department;
+using AdventureWorks.Infrastructure.Persistence;
+using AdventureWorksTerminal;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using System.Reflection;
 
 ILoggerFactory loggerFactory = LoggerFactory.Create(builder => { builder.AddConsole(); });
 
@@ -25,7 +30,16 @@ Console.WriteLine(connectionString);
 
 AdventureWorksContextFactory adventureContext = new AdventureWorksContextFactory();
 var dbContext = adventureContext.CreateDbContext(new string[] { });
-var persions = await dbContext.People.ToListAsync();
+//var persions = await dbContext.People.ToListAsync();
+
+var serviceCollection = new ServiceCollection()
+    .AddMediatR(Assembly.GetExecutingAssembly())
+    .BuildServiceProvider();
+var mediator = serviceCollection.GetRequiredService<IMediator>();
+
+new HumanResourcesEndpoint(mediator).GetDepartmentList();
+
+
 Console.ReadKey(true);
 public class AdventureWorksContextFactory : IDesignTimeDbContextFactory<AdventureWorks2019Context>
 {

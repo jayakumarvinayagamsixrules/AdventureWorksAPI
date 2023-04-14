@@ -13,13 +13,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TerminalUI", "TerminalUI", "{E563D240-33FC-4C63-9F3B-F280E120F12E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWorksTerminal", "src\TerminalUI\AdventureWorksTerminal\AdventureWorksTerminal.csproj", "{CD0929CD-077D-4571-9312-354CFCC45B12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorksTerminal", "src\TerminalUI\AdventureWorksTerminal\AdventureWorksTerminal.csproj", "{CD0929CD-077D-4571-9312-354CFCC45B12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWorks.Application", "src\Application\AdventureWorks.Application\AdventureWorks.Application.csproj", "{B10068ED-3FE4-4EA7-B675-9F48685EEF29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Application", "src\Application\AdventureWorks.Application\AdventureWorks.Application.csproj", "{B10068ED-3FE4-4EA7-B675-9F48685EEF29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWorks.Domain", "src\Domain\AdventureWorks.Domain\AdventureWorks.Domain.csproj", "{268CB2BB-582F-4379-AA05-4A4185D18272}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Domain", "src\Domain\AdventureWorks.Domain\AdventureWorks.Domain.csproj", "{268CB2BB-582F-4379-AA05-4A4185D18272}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWorks.Infrastructure", "src\Infrastructure\AdventureWorks.Infrastructure\AdventureWorks.Infrastructure.csproj", "{B8A79D98-080B-42BC-9C6D-1E758FA6A6AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorks.Infrastructure", "src\Infrastructure\AdventureWorks.Infrastructure\AdventureWorks.Infrastructure.csproj", "{B8A79D98-080B-42BC-9C6D-1E758FA6A6AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIs", "APIs", "{F83254A9-92FA-4A57-B0F0-0D974B771413}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HumanResources", "HumanResources", "{1C5312F3-5A8C-44F4-9E3E-0998A94CFE2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Department.API", "src\APIs\HumanResources\Department.API\Department.API.csproj", "{7F4DDD6E-88FA-437D-90B4-AAA26BA652DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +49,10 @@ Global
 		{B8A79D98-080B-42BC-9C6D-1E758FA6A6AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8A79D98-080B-42BC-9C6D-1E758FA6A6AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8A79D98-080B-42BC-9C6D-1E758FA6A6AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F4DDD6E-88FA-437D-90B4-AAA26BA652DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F4DDD6E-88FA-437D-90B4-AAA26BA652DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F4DDD6E-88FA-437D-90B4-AAA26BA652DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F4DDD6E-88FA-437D-90B4-AAA26BA652DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,6 +66,9 @@ Global
 		{B10068ED-3FE4-4EA7-B675-9F48685EEF29} = {8494C5EB-281B-4D3F-B2F3-521BCE1558C6}
 		{268CB2BB-582F-4379-AA05-4A4185D18272} = {58A02F6D-AFD0-4172-A76F-8AB426776559}
 		{B8A79D98-080B-42BC-9C6D-1E758FA6A6AA} = {FD29D766-B496-47F7-B9BE-9B5CDD46A7D9}
+		{F83254A9-92FA-4A57-B0F0-0D974B771413} = {B4B0E088-D2B7-40ED-AC4D-659CC2CC3937}
+		{1C5312F3-5A8C-44F4-9E3E-0998A94CFE2D} = {F83254A9-92FA-4A57-B0F0-0D974B771413}
+		{7F4DDD6E-88FA-437D-90B4-AAA26BA652DE} = {1C5312F3-5A8C-44F4-9E3E-0998A94CFE2D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C128C6AD-B6FA-430E-8711-43DAF91C2A12}

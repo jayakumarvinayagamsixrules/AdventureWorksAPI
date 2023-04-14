@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -8,6 +8,29 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Domain\AdventureWorks.Domain\AdventureWorks.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Purchasing\Commands\" />
+    <Folder Include="Features\Purchasing\Queries\" />
+    <Folder Include="Features\Production\Commands\" />
+    <Folder Include="Features\Production\Queries\" />
+    <Folder Include="Features\Sales\Commands\" />
+    <Folder Include="Features\Sales\Queries\" />
+    <Folder Include="Features\Person\Commands\" />
+    <Folder Include="Features\Person\Queries\" />
+    <Folder Include="Features\Humanresources\Commands\" />
+    <Folder Include="Models\" />
+    <Folder Include="Exceptions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="AutoMapper" Version="12.0.1" />
+	  <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+	  <PackageReference Include="FluentValidation" Version="11.5.1" />
+	  <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.1" />
+	  <PackageReference Include="MediatR.extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+	  <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
   </ItemGroup>
 
 </Project>

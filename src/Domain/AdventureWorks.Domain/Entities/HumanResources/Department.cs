@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdventureWorks.Domain.Common;
+using System;
 using System.Collections.Generic;
 
 namespace AdventureWorks.Domain.Entities;
@@ -6,7 +7,7 @@ namespace AdventureWorks.Domain.Entities;
 /// <summary>
 /// Lookup table containing the departments within the Adventure Works Cycles company.
 /// </summary>
-public partial class Department
+public partial class Department : EntityBase
 {
     /// <summary>
     /// Primary key for Department records.

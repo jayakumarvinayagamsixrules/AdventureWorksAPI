@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdventureWorks.Domain.Common;
+using System;
 using System.Collections.Generic;
 
 namespace AdventureWorks.Domain.Entities;
@@ -6,7 +7,7 @@ namespace AdventureWorks.Domain.Entities;
 /// <summary>
 /// Work shift lookup table.
 /// </summary>
-public partial class Shift
+public partial class Shift : EntityBase
 {
     /// <summary>
     /// Primary key for Shift records.

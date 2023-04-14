@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using AdventureWorks.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace AdventureWorks.Domain.Entities;
+namespace AdventureWorks.Infrastructure.Persistence;
 
 public partial class AdventureWorks2019Context : DbContext
 {
