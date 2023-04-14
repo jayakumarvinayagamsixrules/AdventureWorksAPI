@@ -1,0 +1,2 @@
+﻿Console.App DBContext setup
+https://learn.microsoft.com/en-gb/ef/core/cli/dbcontext-creation?tabs=vs
